@@ -333,6 +333,41 @@
   .gh-link:hover{color:var(--blue-2);}
   @media (max-width:860px){.project-grid{grid-template-columns:1fr;}}
 
+  /* ---------- Featured Business Analysis Case Study ---------- */
+  .case-study{grid-column:1 / -1; background:var(--surface); border:1px solid var(--border); border-radius:18px; overflow:hidden; box-shadow:var(--shadow-lg);}
+  .case-hero{padding:34px 36px 32px; background:linear-gradient(135deg,var(--navy),#173D70 62%,var(--blue-2)); color:#fff; position:relative; overflow:hidden;}
+  .case-hero::after{content:""; position:absolute; width:260px; height:260px; right:-70px; top:-110px; border:1px solid rgba(255,255,255,.2); border-radius:50%; box-shadow:0 0 0 34px rgba(255,255,255,.04), 0 0 0 68px rgba(255,255,255,.035);}
+  .case-kicker{font-family:var(--code); font-size:12px; letter-spacing:.13em; text-transform:uppercase; color:#B8D4FF; margin-bottom:14px; position:relative; z-index:1;}
+  .case-hero h3{color:#fff; font-size:clamp(28px,4vw,42px); line-height:1.08; margin-bottom:16px; position:relative; z-index:1;}
+  .case-hero p{max-width:760px; color:rgba(255,255,255,.82); line-height:1.7; font-size:16px; position:relative; z-index:1;}
+  .case-meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; position:relative; z-index:1;}
+  .case-meta span{font-family:var(--code); font-size:12px; padding:7px 11px; border-radius:7px; color:#fff; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);}
+  .case-content{padding:34px 36px 38px;}
+  .case-section{margin-bottom:38px;}
+  .case-section:last-child{margin-bottom:0;}
+  .case-section h4{font-size:20px; margin-bottom:16px;}
+  .case-section > p{color:var(--text-soft); line-height:1.7; max-width:780px; margin-bottom:18px;}
+  .case-list{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+  .case-list li{padding:13px 14px 13px 34px; border:1px solid var(--border); border-radius:9px; color:var(--text-soft); font-size:13.5px; line-height:1.45; position:relative; background:var(--surface-2);}
+  .case-list li::before{content:""; position:absolute; left:14px; top:18px; width:8px; height:8px; border-radius:50%; background:var(--blue-2); box-shadow:0 0 0 4px var(--sky-light);}
+  .solution-list li::before{border-radius:2px; background:#25A978; box-shadow:0 0 0 4px rgba(37,169,120,.13);}
+  .contribution-grid,.skill-grid{display:flex; flex-wrap:wrap; gap:8px;}
+  .contribution-grid span,.skill-grid span{font-family:var(--code); font-size:12px; padding:8px 11px; color:var(--blue-2); background:var(--sky-light); border:1px solid var(--border); border-radius:7px;}
+  .artifact-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+  .artifact{border:1px solid var(--border); border-radius:10px; overflow:hidden; background:var(--surface-2);}
+  .artifact img{width:100%; aspect-ratio:16/9; object-fit:cover; background:linear-gradient(135deg,var(--sky-light),var(--surface-2));}
+  .artifact figcaption{padding:11px 13px; font-size:13px; color:var(--text-soft); font-weight:600;}
+  .deliverable-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px;}
+  .deliverable-card{border:1px solid var(--border); border-radius:9px; padding:14px; background:var(--surface-2); font-size:13px; color:var(--text-soft); font-weight:600;}
+  .deliverable-card::before{content:"DOC"; display:block; font-family:var(--code); color:var(--blue-2); font-size:10px; margin-bottom:8px; letter-spacing:.1em;}
+  .benefit-grid{display:flex; flex-wrap:wrap; gap:8px;}
+  .benefit-grid span{color:var(--text-soft); font-size:13.5px; padding:8px 12px; border-left:3px solid #25A978; background:var(--surface-2);}
+  .case-actions{display:flex; flex-wrap:wrap; gap:10px; padding-top:26px; border-top:1px solid var(--border);}
+  .case-actions .btn{font-size:13px; padding:11px 15px;}
+  .case-outcome{padding:20px; border-left:3px solid var(--blue-2); background:var(--sky-light); color:var(--text-soft); line-height:1.7; font-size:14.5px;}
+  @media (max-width:760px){.case-list,.artifact-grid{grid-template-columns:repeat(2,1fr);}.deliverable-grid{grid-template-columns:repeat(2,1fr);}.case-hero,.case-content{padding-left:22px;padding-right:22px;}}
+  @media (max-width:480px){.case-list,.artifact-grid,.deliverable-grid{grid-template-columns:1fr;}.case-hero{padding-top:28px;}.case-section{margin-bottom:30px;}}
+
   /* ---------- Certifications ---------- */
   .certs{padding:110px 0;}
   .cert-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
@@ -468,7 +503,7 @@
         <a href="#contact" class="btn btn-ghost">Contact Me</a>
       </div>
       <div class="stat-strip">
-        <div class="stat-cell"><div class="stat-num">5</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-cell"><div class="stat-num">6</div><div class="stat-label">Projects Built</div></div>
         <div class="stat-cell"><div class="stat-num">6</div><div class="stat-label">Certifications</div></div>
         <div class="stat-cell"><div class="stat-num">10+</div><div class="stat-label">Tools &amp; Libraries</div></div>
         <div class="stat-cell"><div class="stat-num">2027</div><div class="stat-label">Graduating</div></div>
@@ -604,7 +639,68 @@
   <div class="container">
     <div class="eyebrow reveal">Projects</div>
     <h2 class="section-title reveal">Work that turned datasets into decisions.</h2>
-    <p class="section-sub reveal">Five projects spanning machine learning, exploratory analysis, and business dashboards.</p>
+    <p class="section-sub reveal">Six projects spanning machine learning, exploratory analysis, business dashboards, and business analysis.</p>
+    <article class="case-study reveal">
+      <div class="case-hero">
+        <div class="case-kicker">Featured case study / Business analysis</div>
+        <h3>CRM Lead Management System</h3>
+        <p>Designed a CRM Lead Management solution to automate lead capture, assignment, follow-up tracking, opportunity conversion, and sales reporting.</p>
+        <div class="case-meta"><span>Role: Business Analyst</span><span>Industry: Real Estate</span><span>Focus: Lead-to-opportunity process</span></div>
+      </div>
+      <div class="case-content">
+        <div class="case-section">
+          <h4>Business Problem</h4>
+          <ul class="case-list">
+            <li>Manual Excel-based lead management</li><li>Duplicate leads</li><li>Missed follow-ups</li>
+            <li>Delayed lead assignment</li><li>Manual reporting</li><li>Limited sales visibility</li>
+          </ul>
+        </div>
+        <div class="case-section">
+          <h4>Proposed Solution</h4>
+          <p>A centralized CRM workflow gives sales teams one reliable place to capture, qualify, progress, and report on every real-estate lead.</p>
+          <ul class="case-list solution-list">
+            <li>Automated lead capture</li><li>Automatic lead assignment</li><li>Duplicate detection</li>
+            <li>Follow-up reminders</li><li>Opportunity management</li><li>Sales dashboards</li>
+          </ul>
+        </div>
+        <div class="case-section">
+          <h4>My Contributions</h4>
+          <div class="contribution-grid">
+            <span>Stakeholder Analysis</span><span>Requirements Gathering</span><span>Functional Requirements</span><span>Non-Functional Requirements</span><span>User Stories</span><span>Acceptance Criteria</span><span>Use Cases</span><span>Gap Analysis</span><span>As-Is Process Analysis</span><span>To-Be Process Analysis</span><span>Wireframing</span><span>BRD Creation</span><span>FDD Creation</span>
+          </div>
+        </div>
+        <div class="case-section">
+          <h4>Project Artifacts</h4>
+          <div class="artifact-grid">
+            <figure class="artifact"><img src="assets/crm-as-is-process-flow.png" alt="As-Is Process Flow placeholder"><figcaption>As-Is Process Flow</figcaption></figure>
+            <figure class="artifact"><img src="assets/crm-to-be-process-flow.png" alt="To-Be Process Flow placeholder"><figcaption>To-Be Process Flow</figcaption></figure>
+            <figure class="artifact"><img src="assets/crm-lead-management-wireframe.png" alt="Lead Management Wireframe placeholder"><figcaption>Lead Management Wireframe</figcaption></figure>
+            <figure class="artifact"><img src="assets/crm-create-lead-wireframe.png" alt="Create Lead Wireframe placeholder"><figcaption>Create Lead Wireframe</figcaption></figure>
+            <figure class="artifact"><img src="assets/crm-lead-details-wireframe.png" alt="Lead Details Wireframe placeholder"><figcaption>Lead Details Wireframe</figcaption></figure>
+            <figure class="artifact"><img src="assets/crm-sales-dashboard-wireframe.png" alt="Sales Dashboard Wireframe placeholder"><figcaption>Sales Dashboard Wireframe</figcaption></figure>
+          </div>
+        </div>
+        <div class="case-section">
+          <h4>Key Deliverables</h4>
+          <div class="deliverable-grid"><div class="deliverable-card">BRD</div><div class="deliverable-card">FDD</div><div class="deliverable-card">User Stories</div><div class="deliverable-card">Acceptance Criteria</div><div class="deliverable-card">Use Cases</div><div class="deliverable-card">Wireframes</div><div class="deliverable-card">Process Flows</div></div>
+        </div>
+        <div class="case-section">
+          <h4>Business Benefits</h4>
+          <div class="benefit-grid"><span>Faster lead response</span><span>Reduced duplicate records</span><span>Better follow-up management</span><span>Higher conversion rates</span><span>Improved sales visibility</span><span>Automated reporting</span></div>
+        </div>
+        <div class="case-section">
+          <h4>Skills Demonstrated</h4>
+          <div class="skill-grid"><span>Requirements Gathering</span><span>Business Process Modeling</span><span>Gap Analysis</span><span>User Story Writing</span><span>Acceptance Criteria</span><span>Use Case Modeling</span><span>CRM Analysis</span><span>Wireframing</span><span>Documentation</span></div>
+        </div>
+        <div class="case-section">
+          <h4>Project Outcome</h4>
+          <p class="case-outcome">The proposed CRM solution centralizes lead management, improves sales-team efficiency, and enables data-driven decision-making through timely follow-up visibility and automated reporting.</p>
+        </div>
+        <div class="case-actions">
+          <a class="btn btn-primary" href="#">View BRD</a><a class="btn btn-ghost" href="#">View FDD</a><a class="btn btn-ghost" href="#">View Presentation</a><a class="btn btn-ghost" href="#">View GitHub Repository</a>
+        </div>
+      </div>
+    </article>
     <div class="project-grid">
 
       <div class="project-card reveal">
