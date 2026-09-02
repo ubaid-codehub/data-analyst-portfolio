@@ -353,10 +353,6 @@
   .solution-list li::before{border-radius:2px; background:#25A978; box-shadow:0 0 0 4px rgba(37,169,120,.13);}
   .contribution-grid,.skill-grid{display:flex; flex-wrap:wrap; gap:8px;}
   .contribution-grid span,.skill-grid span{font-family:var(--code); font-size:12px; padding:8px 11px; color:var(--blue-2); background:var(--sky-light); border:1px solid var(--border); border-radius:7px;}
-  .artifact-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
-  .artifact{border:1px solid var(--border); border-radius:10px; overflow:hidden; background:var(--surface-2);}
-  .artifact img{width:100%; aspect-ratio:16/9; object-fit:cover; background:linear-gradient(135deg,var(--sky-light),var(--surface-2));}
-  .artifact figcaption{padding:11px 13px; font-size:13px; color:var(--text-soft); font-weight:600;}
   .deliverable-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:10px;}
   .deliverable-card{border:1px solid var(--border); border-radius:9px; padding:14px; background:var(--surface-2); font-size:13px; color:var(--text-soft); font-weight:600;}
   .deliverable-card::before{content:"DOC"; display:block; font-family:var(--code); color:var(--blue-2); font-size:10px; margin-bottom:8px; letter-spacing:.1em;}
@@ -365,8 +361,8 @@
   .case-actions{display:flex; flex-wrap:wrap; gap:10px; padding-top:26px; border-top:1px solid var(--border);}
   .case-actions .btn{font-size:13px; padding:11px 15px;}
   .case-outcome{padding:20px; border-left:3px solid var(--blue-2); background:var(--sky-light); color:var(--text-soft); line-height:1.7; font-size:14.5px;}
-  @media (max-width:760px){.case-list,.artifact-grid{grid-template-columns:repeat(2,1fr);}.deliverable-grid{grid-template-columns:repeat(2,1fr);}.case-hero,.case-content{padding-left:22px;padding-right:22px;}}
-  @media (max-width:480px){.case-list,.artifact-grid,.deliverable-grid{grid-template-columns:1fr;}.case-hero{padding-top:28px;}.case-section{margin-bottom:30px;}}
+  @media (max-width:760px){.case-list{grid-template-columns:repeat(2,1fr);}.deliverable-grid{grid-template-columns:repeat(2,1fr);}.case-hero,.case-content{padding-left:22px;padding-right:22px;}}
+  @media (max-width:480px){.case-list,.deliverable-grid{grid-template-columns:1fr;}.case-hero{padding-top:28px;}.case-section{margin-bottom:30px;}}
 
   /* ---------- Certifications ---------- */
   .certs{padding:110px 0;}
@@ -670,17 +666,6 @@
           </div>
         </div>
         <div class="case-section">
-          <h4>Project Artifacts</h4>
-          <div class="artifact-grid">
-            <figure class="artifact"><img src="assets/crm-as-is-process-flow.png" alt="As-Is Process Flow placeholder"><figcaption>As-Is Process Flow</figcaption></figure>
-            <figure class="artifact"><img src="assets/crm-to-be-process-flow.png" alt="To-Be Process Flow placeholder"><figcaption>To-Be Process Flow</figcaption></figure>
-            <figure class="artifact"><img src="assets/crm-lead-management-wireframe.png" alt="Lead Management Wireframe placeholder"><figcaption>Lead Management Wireframe</figcaption></figure>
-            <figure class="artifact"><img src="assets/crm-create-lead-wireframe.png" alt="Create Lead Wireframe placeholder"><figcaption>Create Lead Wireframe</figcaption></figure>
-            <figure class="artifact"><img src="assets/crm-lead-details-wireframe.png" alt="Lead Details Wireframe placeholder"><figcaption>Lead Details Wireframe</figcaption></figure>
-            <figure class="artifact"><img src="assets/crm-sales-dashboard-wireframe.png" alt="Sales Dashboard Wireframe placeholder"><figcaption>Sales Dashboard Wireframe</figcaption></figure>
-          </div>
-        </div>
-        <div class="case-section">
           <h4>Key Deliverables</h4>
           <div class="deliverable-grid"><div class="deliverable-card">BRD</div><div class="deliverable-card">FDD</div><div class="deliverable-card">User Stories</div><div class="deliverable-card">Acceptance Criteria</div><div class="deliverable-card">Use Cases</div><div class="deliverable-card">Wireframes</div><div class="deliverable-card">Process Flows</div></div>
         </div>
@@ -697,7 +682,7 @@
           <p class="case-outcome">The proposed CRM solution centralizes lead management, improves sales-team efficiency, and enables data-driven decision-making through timely follow-up visibility and automated reporting.</p>
         </div>
         <div class="case-actions">
-          <a class="btn btn-primary" href="#">View BRD</a><a class="btn btn-ghost" href="#">View FDD</a><a class="btn btn-ghost" href="#">View Presentation</a><a class="btn btn-ghost" href="#">View GitHub Repository</a>
+          <a class="btn btn-primary" href="https://github.com/ubaid-codehub/business-analyst-portfolio/blob/main/CRM-Lead-Management-System/BRD.pdf" target="_blank" rel="noopener">View BRD</a><a class="btn btn-ghost" href="https://github.com/ubaid-codehub/business-analyst-portfolio/blob/main/CRM-Lead-Management-System/FRD.pdf" target="_blank" rel="noopener">View FRD</a><a class="btn btn-ghost" href="https://github.com/ubaid-codehub/business-analyst-portfolio/tree/main/CRM-Lead-Management-System" target="_blank" rel="noopener">View GitHub Repository</a>
         </div>
       </div>
     </article>
